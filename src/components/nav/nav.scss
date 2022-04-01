@@ -1,0 +1,32 @@
+.nav {
+	width: 100%;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 50px;
+
+		.navItem {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.logo {
+				text-decoration: none;
+				font-size: 20px;
+				letter-spacing: 0.5px;
+				color: black;
+			}
+
+			.menuItem {
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+
+			:first-child {
+				margin: 0 30px 0 0;
+			}
+		}
+	}
+}

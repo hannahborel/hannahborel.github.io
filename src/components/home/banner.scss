@@ -1,0 +1,21 @@
+.banner {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.title {
+		font-weight: 700;
+		font-size: 30px;
+		letter-spacing: 1.5px;
+		margin: 0 0 7px 0;
+	}
+
+	.subTitle {
+		font-weight: 300;
+		font-size: 20px;
+		letter-spacing: 1.2px;
+		margin-right: 10px;
+	}
+}
