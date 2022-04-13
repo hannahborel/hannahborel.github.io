@@ -4,11 +4,11 @@ import Banner from "./Banner";
 import Work from "./Work";
 import Tools from "./Tools";
 
-export default function Home() {
+export default function Home({ setHideNav }) {
 	return (
-		<div className="app">
+		<div className="sections">
 			<Banner />
-			<Work />
+			<Work setHideNav={setHideNav} />
 			<Tools />
 		</div>
 	);

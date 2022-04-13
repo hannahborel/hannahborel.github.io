@@ -1,5 +1,10 @@
 .sections {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	font-family: "Roboto", san-serif;
+
+	> * {
+		width: 100vw;
+		height: calc(100vh - 50px);
+		scroll-snap-align: start;
+	}
 }
