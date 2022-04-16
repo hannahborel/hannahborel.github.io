@@ -1,6 +1,7 @@
 import React from "react";
 import "./projectsBody.scss";
 import BodyItem from "./BodyItem";
+import ProjectFooter from "./ProjectFooter";
 
 export default function ProjectsBody({ bodyData }) {
 	console.log("bodyData: ", bodyData.body);
@@ -12,6 +13,7 @@ export default function ProjectsBody({ bodyData }) {
 			{bodyData.body.map((item, index) => (
 				<BodyItem key={item.index} text={item.p} img={item.img} video={item.video} />
 			))}
+			<ProjectFooter />
 		</div>
 	);
 }

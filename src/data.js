@@ -18,7 +18,6 @@ export const sliderData = [
 		titleSecond: "",
 		type: "Website",
 		year: "2021",
-		link: "#forth",
 		img: "./assets/img/supeRepGreen.png",
 	},
 	{
@@ -29,30 +28,40 @@ export const sliderData = [
 		titleSecond: "",
 		type: "Web App",
 		year: "2021",
-		link: "#forth",
 		img: "./assets/img/trivia-home.png",
+	},
+	{
+		id: "3",
+		key: "c",
+		circle: "bg-circle widget",
+		titleFirst: "Weather",
+		titleSecond: "Widget",
+		type: "Widget",
+		year: "2020",
+		img: "./assets/img/ww-home.png",
 	},
 ];
 
 export const projectDetails = [
 	{
 		id: "1",
-		title: "Fourth & Nomad ",
-		tagline: "From Store to Screen",
+		title: "From Store to Screen ",
+		tagline: "",
 		year: "2021",
 		deliverables: [
-			"UI/UX",
+			"UI/UX & Dev",
 			"Visual Design",
 			"Creative Direction",
-			"Development",
-			"Product Photos",
+			"Photo Libraires",
 			"Custom Graphics",
 			"Website Copy",
 			"App Integration",
 		],
 		description:
-			"I was approached to redesign Forth & Nomad’s ecommerce site to help increace online sales and create and create a visual design that was more in line with their brand. The design of theier brick and mortar store shouts everything Forth and Nomad stands for. Forward, handpicked goods made intentonally with their customers in mind. All of their products together tell a story. My goal was to recreate that same experince in store, online",
-		link: "https://forthandnomad.com",
+			"I was approached to redesign Forth & Nomad’s e-commerce site to help increase online sales and create and create a visual design that was more in line with their brand. Working closely with the F&N team I developed several concepts that covered the e-commerce platform, branded content, and tone of voice.",
+		website: "https://forthandnomad.com",
+		github: "",
+
 		icons: [
 			"./assets/img/icons/shopify-icon.png",
 			"./assets/img/icons/liquid-icon.png",
@@ -64,12 +73,20 @@ export const projectDetails = [
 
 		body: [
 			{
-				p: "Palates were inspired by their brick and mortar location. Creating subtle brightness with earth tones.",
+				p: "Palates were inspired by their brick and mortar location. I chose earth tones but kept it bright.",
 				img: "/assets/img/projectImg/fn/fn-palette.png",
 			},
 			{
-				p: "Product case studies assisted in creating a new product flow and display. We harmonizednbest sellars with in store products that lacked visibility.",
-				img: "./assets/img/projectImg/fn/fn-mockup.png",
+				p: "Custom graphic images were created to highlight the trendy and whimsical feel of their store.",
+				img: "./assets/img/projectImg/fn/fn-layout01.png",
+			},
+			{
+				p: "I stepped in as the Creative Director for a new library of photos that integrated different products together along with live models to showcase their products.",
+				img: "./assets/img/projectImg/fn/fn-layout02.png",
+			},
+			{
+				p: "Product case studies assisted in creating a new product flow and display. We harmonized best sellers with in store products that lacked visibility.",
+				img: "./assets/img/projectImg/fn/fn-layout03.png",
 			},
 			{
 				p: "Analytics were taken from 6 months after redesign launch. Here are some of my favorites.",
@@ -84,8 +101,9 @@ export const projectDetails = [
 		year: "2022",
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "Photo Libraries", "Website Copy"],
 		description:
-			"I wanted to create a dynamic ecommerce site using only vanilla javaScript. I chose Nike as the template and drove pallatte inspiration from their current instagram pallete.",
-		link: "https://hannahborel.github.io/ecommerce01",
+			"I wanted to create a dynamic e-commerce site using only vanilla javaScript. I chose Nike as the template and drove palette inspiration from their current instagram palette.",
+		website: "https://hannahborel.github.io/nikeDemo",
+		github: "https://github.com/hannahborel/nikeDemo",
 		icons: [
 			"./assets/img/icons/js.png",
 			"./assets/img/icons/ps.png",
@@ -98,7 +116,7 @@ export const projectDetails = [
 		body: [
 			{
 				p: "Dynamic sliding, product selection and product color selection was handled with vanilla javaScript.  All graphics are custom, created with Photoshop and Sketch.",
-				video: "./assets/img/projectImg/nike/nikeDemo1080.mp4",
+				video: "./assets/img/projectImg/nike/nikeDemoSm.mp4",
 			},
 		],
 	},
@@ -111,7 +129,8 @@ export const projectDetails = [
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "jQuery"],
 		description:
 			"I am a 90s kid through and through. So when asked to design a themed Trivia night, it was only natural to pay homage to my millennial disposition. Feel free to give it a go for nostalgia…or maybe feeling really old.",
-		link: "https://hannahborel.github.io/ecommerce01",
+		website: "https://hannahborel.github.io/trivia-game/",
+		github: "https://github.com/hannahborel/trivia-game",
 		icons: [
 			"./assets/img/icons/js.png",
 			"./assets/img/icons/ps.png",
@@ -131,6 +150,32 @@ export const projectDetails = [
 
 			{
 				img: "./assets/img/projectImg/trivia/trivia04.png",
+			},
+		],
+	},
+	{
+		id: "4",
+		title: "Weather Widget ",
+		tagline: "Something cute just for fun",
+		year: "2019",
+		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "ajax"],
+		description:
+			"I was inspired by the cutest little weather widget I saw online and wanted to create my own. All graphics including background vectors and westher icons were created from scratch with Adobe Illustrator. Data is generated dynamically from the weather.com API and is pulled for the city of Houston, TX.",
+		website: "https://hannahborel.github.io/weather-widget/",
+		github: "https://github.com/hannahborel/weather-widget",
+		icons: [
+			"./assets/img/icons/js.png",
+			"./assets/img/icons/ai.png",
+			"./assets/img/icons/sketch.png",
+			"./assets/img/icons/vsCode.png",
+			"./assets/img/icons/html.png",
+		],
+		banner: "./assets/img/projectImg/widget/ww-banner.png",
+
+		body: [
+			{
+				p: "The sun shows the days current temperature and will update hourly. The weather blocks populate by starting with tomorrows date and progressing for the next 7 days.",
+				img: "./assets/img/projectImg/widget/ww.gif",
 			},
 		],
 	},

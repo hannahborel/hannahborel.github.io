@@ -6,35 +6,13 @@
 	justify-content: center;
 	align-items: center;
 	gap: 15rem;
-	margin-bottom: 20rem;
 	padding: 20px 0;
-
-	.bodyBanner img {
-		width: 100%;
-	}
 }
 
-.body-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 15rem;
+.bodyBanner {
+	width: 100%;
 
 	img {
-		width: 75%;
-	}
-
-	.body-text-content {
-		width: 45%;
-		text-align: justify;
-		font-size: 20px;
-		font-weight: 400;
-		text-align: center;
-		line-height: 1.8em;
-	}
-
-	video {
-		width: 60%;
+		width: 100%;
 	}
 }

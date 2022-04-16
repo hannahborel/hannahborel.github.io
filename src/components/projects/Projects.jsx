@@ -1,11 +1,14 @@
 import React from "react";
 import ProjectsHeader from "./projectsHeader";
 import ProjectsBody from "./ProjectsBody";
+
 import "./projects.scss";
 import { projectDetails } from "../../data";
 import { useLocation } from "react-router-dom";
 
-export default function Projects(props) {
+export default function Projects({ setHideNav }) {
+	setHideNav(true);
+
 	const location = useLocation();
 	const state = location.state;
 	console.log("data from works: ", state);
@@ -14,7 +17,7 @@ export default function Projects(props) {
 	console.log(data);
 
 	return (
-		<div className="project">
+		<div className="project" id="project">
 			<ProjectsHeader headerData={data} />
 			<ProjectsBody bodyData={data} />
 		</div>

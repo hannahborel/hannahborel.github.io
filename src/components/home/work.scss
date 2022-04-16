@@ -44,8 +44,8 @@
 				position: relative;
 
 				.bg-circle {
-					width: 400px;
-					height: 400px;
+					width: 450px;
+					height: 450px;
 					border-radius: 50%;
 					position: absolute;
 
@@ -54,10 +54,13 @@
 					}
 
 					&.green {
-						background-color: #61aaa6;
+						background-color: #a1e7b2;
 					}
 					&.darkBlue {
 						background-color: rgba(0, 4, 250, 0.281);
+					}
+					&.widget {
+						background-color: #9d9baa6a;
 					}
 				}
 
@@ -88,7 +91,12 @@
 						color: black;
 						font-size: 14px;
 						letter-spacing: 1.2;
+						width: 100px;
+						height: 30px;
 						cursor: pointer;
+						&:hover {
+							font-size: 15px;
+						}
 					}
 				}
 				.right {

@@ -1,16 +1,27 @@
+ul {
+	padding: 0;
+	li {
+		text-decoration: none;
+	}
+}
+
 .header {
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
-	font-family: "Roboto", sans-serif;
+	font-family: "Lato", sans-serif;
 	padding: calc(18vh - 50px) 18vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
 
 	.header-content {
-		width: 1030px;
+		width: 1040px;
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		margin: 0 auto;
-		height: 400px;
+		height: 410px;
 	}
 }
 
@@ -21,9 +32,8 @@
 	}
 
 	.text-content {
-		font-size: 16px;
-		font-size: 16px;
-		line-height: 1.8em;
+		font-size: 18px;
+		line-height: 1.9em;
 		letter-spacing: 1.1px;
 		font-weight: 300;
 	}
@@ -32,15 +42,16 @@
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
-		width: 22%;
+		width: 26%;
 		padding-top: 5px;
 		position: relative;
 
 		.title {
-			font-size: 14px;
-			padding-bottom: 1em;
+			font-size: 12px;
+			padding-bottom: 1.2em;
 			text-transform: uppercase;
-			font-weight: 500;
+			letter-spacing: 1.2px;
+			font-weight: 600;
 		}
 	}
 
@@ -74,14 +85,14 @@
 	&.right {
 		width: 60%;
 		margin-top: -5px;
-		max-width: 618px;
 		position: relative;
 
 		.title {
-			font-weight: 500;
+			font-weight: 600;
 			font-size: 42px;
 			line-height: 1.2em;
-			letter-spacing: 1.3px;
+			// letter-spacing: 1px;
+			margin-top: 10px;
 			margin-bottom: 1em;
 
 			span {
@@ -91,18 +102,23 @@
 		}
 
 		.text-content {
-			text-align: justify;
+			// text-align: justify;
 			margin-bottom: 3rem;
 		}
 
 		.siteLink {
 			float: right;
 			margin-top: 20px;
+			width: 110px;
 
 			a {
 				margin-right: 20px;
 				text-decoration: none;
 				color: black;
+				&:hover {
+					color: blue;
+					font-size: 17px;
+				}
 			}
 		}
 		img {

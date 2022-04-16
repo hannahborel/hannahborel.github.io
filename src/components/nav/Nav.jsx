@@ -8,7 +8,7 @@ export default function Nav({ hideNav, setHideNav }) {
 			<div className="wrapper">
 				<div className="navItem left">
 					<Link to="/" className="logo" onClick={() => setHideNav(false)}>
-						HB
+						HANNAH BOREL
 					</Link>
 				</div>
 				<div className={"navItem right " + (hideNav && "hide")}>
@@ -18,9 +18,9 @@ export default function Nav({ hideNav, setHideNav }) {
 					<a href="#tools" className="menuItem">
 						Tools
 					</a>
-					<a href="contact" className="menuItem">
-						Contact
-					</a>
+					<Link to="/about" class="menuItem" id="#about">
+						About
+					</Link>
 				</div>
 			</div>
 		</div>
