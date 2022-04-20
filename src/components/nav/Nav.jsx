@@ -1,27 +1,26 @@
 import "./nav.scss";
 import { Link } from "react-router-dom";
+// import HomeNav from "./HomeNav";
 
-export default function Nav({ hideNav, setHideNav }) {
-	console.log(hideNav);
+export default function Nav({ menuOpen, setMenuOpen, setMenuType }) {
 	return (
-		<div className="nav">
+		<div className={"nav " + (menuOpen && "active")}>
 			<div className="wrapper">
-				<div className="navItem left">
-					<Link to="/" className="logo" onClick={() => setHideNav(false)}>
-						HANNAH BOREL
+				<div className="left">
+					<Link to="/" className="logo" onClick={() => setMenuType("/")}>
+						Hannah Borel
 					</Link>
+					<div></div>
 				</div>
-				<div className={"navItem right " + (hideNav && "hide")}>
-					<a href="#work" className="menuItem">
-						Work
-					</a>
-					<a href="#tools" className="menuItem">
-						Tools
-					</a>
-					<Link to="/about" class="menuItem" id="#about">
-						About
-					</Link>
+				<div className="right">
+					<div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+						<span className="line1"></span>
+						<span className="line2"></span>
+						<span className="line3"></span>
+					</div>
 				</div>
+
+				{/* {!hideNav && <HomeNav />} */}
 			</div>
 		</div>
 	);

@@ -5,14 +5,12 @@ import Work from "./Work";
 import Tools from "./Tools";
 import Contact from "./Contact";
 
-export default function Home({ setHideNav }) {
+export default function Home({ menuType, setMenuType, setProject }) {
 	return (
-		<div>
-			<div className="sections">
-				<Banner />
-				<Work setHideNav={setHideNav} />
-				<Tools />
-			</div>
+		<div className="sections">
+			<Banner />
+			<Work menuType={menuType} setMenuType={setMenuType} setProject={setProject} />
+			<Tools />
 			<Contact />
 		</div>
 	);

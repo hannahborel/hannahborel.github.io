@@ -2,10 +2,13 @@
 	width: 100%;
 	font-family: "Roboto", san-serif;
 	scroll-behavior: smooth;
+	position: relative;
+	top: 100px;
+	overflow-x: hidden;
 
 	> * {
 		width: 100vw;
-		height: calc(100vh - 50px);
+		height: calc(100vh - 80px);
 		scroll-snap-align: start;
 	}
 }

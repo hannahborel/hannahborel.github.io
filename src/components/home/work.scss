@@ -11,12 +11,17 @@
 		cursor: pointer;
 
 		&.left {
-			left: 100px;
-			transform: rotateY(180deg);
+			left: 10%;
+			&:active {
+				transform: translateY(4px);
+			}
 		}
 
 		&.right {
-			right: 110px;
+			right: 10%;
+			&:active {
+				transform: translateY(4px);
+			}
 		}
 	}
 
@@ -29,86 +34,82 @@
 
 		.container {
 			width: 100vw;
-
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			position: relative;
 
 			.item {
-				width: 40%;
-				min-width: 750px;
-				height: 90%;
+				width: 50%;
+				height: 500px;
 				display: flex;
 				align-items: center;
 				justify-content: space-around;
 				position: relative;
 
 				.bg-circle {
-					width: 450px;
-					height: 450px;
+					width: 475px;
+					height: 475px;
 					border-radius: 50%;
 					position: absolute;
-
-					&.blue {
-						background-color: #d3dee5;
-					}
-
-					&.green {
-						background-color: #a1e7b2;
-					}
-					&.darkBlue {
-						background-color: rgba(0, 4, 250, 0.281);
-					}
-					&.widget {
-						background-color: #9d9baa6a;
-					}
+					background-color: #a5d1de64;
+					bottom: 40px;
+					z-index: 0;
 				}
 
 				.left {
-					width: 100%;
 					display: flex;
-					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					width: 35%;
 					z-index: 1;
 
-					.title {
-						font-size: 60px;
-						letter-spacing: 1px;
-						font-weight: 500;
-					}
-					.sub-title {
-						padding: 25px 0 20px;
-						font-weight: 200;
-						font-size: 16px;
+					.text-content {
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-start;
 
-						.type {
-							text-transform: uppercase;
-							margin: 0 0 5px 0;
+						.title {
+							font-size: 60px;
+							letter-spacing: 1px;
+							font-weight: 500;
 						}
-					}
+						.sub-title {
+							padding: 25px 0 20px;
+							font-weight: 200;
+							font-size: 16px;
 
-					.project-link {
-						text-decoration: none;
-						color: black;
-						font-size: 14px;
-						letter-spacing: 1.2;
-						width: 100px;
-						height: 30px;
-						cursor: pointer;
-						&:hover {
-							font-size: 15px;
+							.type {
+								text-transform: uppercase;
+								margin: 0 0 5px 0;
+							}
+						}
+
+						.project-link {
+							text-decoration: none;
+							color: black;
+							font-size: 14px;
+							letter-spacing: 1.2;
+							width: 100px;
+							height: 30px;
+							cursor: pointer;
+							&:hover {
+								font-size: 15px;
+							}
 						}
 					}
 				}
 				.right {
-					z-index: 1;
-					position: absolute;
-					width: 500px;
-					right: 0;
+					z-index: 0;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					width: 65%;
 
 					.project-img {
-						padding: 20px 0 0 0;
 						width: 100%;
-						margin-top: 40px;
+						position: relative;
+						z-index: 1;
 					}
 				}
 			}

@@ -1,0 +1,47 @@
+.about {
+	font-family: "Roboto", "san-serif";
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 70%;
+	padding: 50px 50px;
+	margin: 100px 100px 50px;
+
+	.about-item {
+		padding: 10px 0;
+		&.left {
+			width: 50%;
+			img {
+				width: 100%;
+				border-radius: 15px;
+			}
+		}
+
+		&.right {
+			width: 50%;
+			padding-left: 75px;
+
+			.large {
+				font-size: 40px;
+				font-weight: 600;
+				line-height: 150%;
+			}
+			.sub-text {
+				font-size: 22px;
+				line-height: 150%;
+				padding: 20px 0;
+				font-weight: 300;
+				color: rgb(27, 27, 27);
+
+				.reel {
+					text-decoration: none;
+					padding-left: 5px;
+					color: rgb(12, 12, 12);
+					&:hover {
+						color: lightblue;
+					}
+				}
+			}
+		}
+	}
+}

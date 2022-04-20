@@ -4,17 +4,11 @@ import ProjectsBody from "./ProjectsBody";
 
 import "./projects.scss";
 import { projectDetails } from "../../data";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
+// import {useState } from "react";
 
-export default function Projects({ setHideNav }) {
-	setHideNav(true);
-
-	const location = useLocation();
-	const state = location.state;
-	console.log("data from works: ", state);
-
-	let data = projectDetails[state];
-	console.log(data);
+export default function Projects({ project }) {
+	let data = projectDetails[project];
 
 	return (
 		<div className="project" id="project">

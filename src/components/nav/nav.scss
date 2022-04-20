@@ -1,47 +1,113 @@
 .nav {
-	font-family: "Roboto", san-serif;
 	width: 100%;
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	height: 80px;
+	background-color: white;
+	color: black;
 	position: fixed;
-	z-index: 3;
 	top: 0;
-	background-color: rgba(255, 255, 255, 0.973);
-
-	.hide {
-		visibility: hidden;
-	}
+	z-index: 3;
+	transition: all 1s ease;
 
 	.wrapper {
+		padding: 20px 50px;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		margin: 0 auto;
-		width: 90%;
+		justify-content: space-between;
+		position: relative;
 
-		.navItem {
+		.left {
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
-			gap: 50px;
+			position: relative;
 
 			.logo {
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 5px;
 				text-decoration: none;
-				font-size: 15px;
-				letter-spacing: 1.5px;
-				color: black;
+				text-transform: uppercase;
+				color: inherit;
+				margin: 0 auto;
+				padding-bottom: 5px;
 			}
 
-			.menuItem {
-				text-transform: uppercase;
-				font-size: 16px;
-				text-decoration: none;
-				color: black;
-				margin: 0 20px 0 0;
-				font-weight: 500;
-				text-decoration: none;
+			div {
+				position: absolute;
+				width: 100%;
+				height: 4px;
+				bottom: 0;
+				left: 0;
+				background-color: #54b3d69a;
+				transform-origin: bottom right;
+				transition: transform 0.25s ease-out;
+			}
+
+			&:hover div {
+				transform: scale(0);
+				transform-origin: bottom left;
+			}
+
+			.itemContainer {
+				display: flex;
+				align-items: center;
+				margin-left: 30px;
+
+				.icon {
+					font-size: 18px;
+					margin-right: 5px;
+				}
+
+				span {
+					font-size: 15px;
+					font-weight: 500;
+				}
+			}
+		}
+
+		.right {
+			.hamburger {
+				width: 32px;
+				height: 25px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				cursor: pointer;
+				padding: 7px 3px 7px 11px;
+				border-radius: 5px;
+
+				span {
+					width: 100%;
+					height: 3px;
+					background-color: black;
+					transform-origin: left;
+					transition: all 1s ease;
+				}
+			}
+		}
+	}
+
+	&.active {
+		background-color: rgba(180, 180, 180, 0.245);
+
+		.hamburger {
+			text-align: center;
+			background-color: rgba(211, 211, 211, 0.519);
+			span {
+				&:first-child {
+					background-color: white;
+					transform: rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:last-child {
+					background-color: white;
+					transform: rotate(-45deg);
+				}
+
+				&:hover {
+					background-color: none;
+				}
 			}
 		}
 	}

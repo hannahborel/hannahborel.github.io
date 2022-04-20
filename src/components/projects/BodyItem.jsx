@@ -2,7 +2,6 @@ import React from "react";
 import "./bodyItem.scss";
 
 export default function BodyItem({ text, img, video }) {
-	console.log(video);
 	return (
 		<div className="body-item">
 			{text && <p className="body-text-content">{text}</p>}

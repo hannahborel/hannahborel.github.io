@@ -3,14 +3,31 @@ import "./work.scss";
 import { sliderData } from "../../data";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ProgressBar from "./ProgressBar";
 
-export default function Work({ setHideNav }) {
+export default function Work({ setMenuType, setProject }) {
+	const progressUnit = 100 / sliderData.length;
 	const [currentSlide, setCurrentSlide] = useState(0);
-
+	const [progressWidth, setProgressWidth] = useState(100 / sliderData.length);
 	const handleClick = (way) => {
 		way === "left"
-			? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+			? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 0)
 			: setCurrentSlide(currentSlide < sliderData.length - 1 ? currentSlide + 1 : 0);
+	};
+
+	const handleProgressBar = (way) => {
+		if (way === "right" && progressWidth !== 100) {
+			setProgressWidth(progressWidth + progressUnit);
+		} else if (way === "left" && progressWidth > progressUnit) {
+			setProgressWidth(progressWidth - progressUnit);
+		} else setProgressWidth(progressUnit);
+		// } else if (way === "right" && progressWidth === 100) {
+		// 	setProgressWidth(progressUnit);
+	};
+
+	const handleProjects = (page, num) => {
+		setMenuType(page);
+		setProject(num);
 	};
 
 	return (
@@ -21,22 +38,23 @@ export default function Work({ setHideNav }) {
 						<div className="item">
 							<div className={d.circle}></div>
 							<div className="left">
-								<div className="title">
-									<p className="first">{d.titleFirst}</p>
-									<p className="second">{d.titleSecond}</p>
+								<div className="text-content">
+									<div className="title">
+										<p className="first">{d.titleFirst}</p>
+										<p className="second">{d.titleSecond}</p>
+									</div>
+									<div className="sub-title">
+										<p className="type">{d.type}</p>
+										<p className="year">{d.year}</p>
+									</div>
+									<Link
+										to="/projects"
+										className="project-link"
+										onClick={() => handleProjects("/projects", d.id)}
+									>
+										View Project
+									</Link>
 								</div>
-								<div className="sub-title">
-									<p className="type">{d.type}</p>
-									<p className="year">{d.year}</p>
-								</div>
-								<Link
-									to="/projects"
-									state={d.id}
-									className="project-link"
-									onClick={() => setHideNav(true)}
-								>
-									View Project
-								</Link>
 							</div>
 							<div className="right">
 								<img src={d.img} alt="" className="project-img" />
@@ -48,16 +66,23 @@ export default function Work({ setHideNav }) {
 			</div>
 			<img
 				className="arrow left"
-				src="./assets/img/icons/arrow-gray.png"
+				src="./assets/img/icons/arrow-dark-left.png"
 				alt=""
-				onClick={() => handleClick("left")}
+				onClick={() => {
+					handleProgressBar("left");
+					handleClick("left");
+				}}
 			/>
 			<img
 				className="arrow right"
-				src="./assets/img/icons/arrow-gray.png"
+				src="./assets/img/icons/arrow-dark-round.png"
 				alt=""
-				onClick={() => handleClick()}
+				onClick={() => {
+					handleProgressBar("right");
+					handleClick();
+				}}
 			/>
+			<ProgressBar changeWidth={progressWidth} />
 		</div>
 	);
 }

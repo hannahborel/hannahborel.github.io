@@ -1,10 +1,9 @@
 import React from "react";
 import "./contact.scss";
 
-export default function Contact({ pdf }) {
-	console.log(pdf);
+export default function Contact() {
 	return (
-		<div className="contact">
+		<div className="contact" id="contact">
 			<div className="contact-item">
 				<a href="mailto:hannahborel@icloud.com" className="email">
 					Email

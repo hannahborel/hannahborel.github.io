@@ -2,7 +2,7 @@ import "./projectsHeader.scss";
 
 export default function projectHeader(props) {
 	let d = props.headerData;
-	console.log(d);
+
 	return (
 		<div className="header" id="header">
 			<div className="header-content">
