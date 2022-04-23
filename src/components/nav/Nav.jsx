@@ -1,6 +1,5 @@
 import "./nav.scss";
 import { Link } from "react-router-dom";
-// import HomeNav from "./HomeNav";
 
 export default function Nav({ menuOpen, setMenuOpen, setMenuType }) {
 	return (
@@ -8,7 +7,7 @@ export default function Nav({ menuOpen, setMenuOpen, setMenuType }) {
 			<div className="wrapper">
 				<div className="left">
 					<Link to="/" className="logo" onClick={() => setMenuType("/")}>
-						Hannah Borel
+						<span className="logo-lg">Hannah Borel</span> <span className="logo-sm">HB</span>
 					</Link>
 					<div></div>
 				</div>
@@ -19,8 +18,6 @@ export default function Nav({ menuOpen, setMenuOpen, setMenuType }) {
 						<span className="line3"></span>
 					</div>
 				</div>
-
-				{/* {!hideNav && <HomeNav />} */}
 			</div>
 		</div>
 	);

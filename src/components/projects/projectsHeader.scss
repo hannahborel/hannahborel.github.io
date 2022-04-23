@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 ul {
 	padding: 0;
 	li {
@@ -6,70 +8,64 @@ ul {
 }
 
 .header {
-	width: 80%;
-	margin: 0 auto;
 	font-family: "Lato", sans-serif;
-	padding: calc(18vh - 50px) 18vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 5%;
+	margin-bottom: 50px;
+	padding: 50px 0 0;
 
 	.header-content {
-		width: 1040px;
+		width: 90%;
 		position: relative;
 		display: flex;
-		justify-content: space-between;
-		margin: 0 auto;
-		height: 410px;
+		justify-content: center;
+		align-items: flex-start;
+
+		@include mobile {
+			flex-direction: column;
+			margin-left: 100px;
+		}
 	}
 }
 
 .sub-section {
+	@include mobile {
+		margin-bottom: 50px;
+	}
 	.item {
 		padding-top: 1em;
 		position: relative;
 	}
 
 	.text-content {
-		font-size: 18px;
-		line-height: 1.9em;
+		font-size: 16px;
+		line-height: 2.2em;
 		letter-spacing: 1.1px;
 		font-weight: 300;
+		@include mobile {
+			font-size: 12px;
+		}
 	}
 
 	&.left {
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-between;
-		width: 26%;
+		justify-content: center;
+		width: 550px;
+		gap: 10%;
 		padding-top: 5px;
-		position: relative;
+
+		@include mobile {
+			justify-content: flex-start;
+		}
 
 		.title {
-			font-size: 12px;
+			font-size: 14px;
 			padding-bottom: 1.2em;
 			text-transform: uppercase;
-			letter-spacing: 1.2px;
+			letter-spacing: 1.8px;
 			font-weight: 600;
-		}
-	}
-
-	#tools {
-		position: absolute;
-
-		.icons {
-			margin: 0;
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-			padding-bottom: 10px;
-
-			img {
-				box-shadow: 0 6px 13px -7px rgba(73, 71, 71, 0.5);
-				width: 35px;
-				overflow: visible;
-			}
 		}
 	}
 
@@ -84,47 +80,85 @@ ul {
 	}
 
 	&.right {
-		width: 60%;
 		margin-top: -5px;
 		position: relative;
+		width: 60%;
+
+		@include mobile {
+			width: 80%;
+		}
 
 		.title {
-			font-weight: 600;
-			font-size: 42px;
+			font-weight: 500;
+			text-transform: lowercase;
+			font-size: 45px;
 			line-height: 1.2em;
-			// letter-spacing: 1px;
 			margin-top: 10px;
-			margin-bottom: 1em;
+			letter-spacing: 1.2px;
 
-			span {
-				font-weight: 300;
-				color: gray;
+			@include mobile {
+				font-size: 28px;
+				margin: 20px 0;
 			}
 		}
 
-		.text-content {
-			// text-align: justify;
-			margin-bottom: 3rem;
-		}
+		.content-container {
+			width: 80%;
+			@include mobile {
+				width: 100%;
+			}
+			.text-content {
+				margin-bottom: 3rem;
+			}
 
-		.siteLink {
-			float: right;
-			margin-top: 20px;
-			width: 110px;
+			.siteLink {
+				float: right;
+				margin-top: 20px;
+				width: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
-			a {
-				margin-right: 20px;
-				text-decoration: none;
-				color: black;
-				&:hover {
-					color: blue;
-					font-size: 17px;
+				@include mobile {
+					margin-top: 0;
+					float: none;
+					justify-content: flex-start;
+					font-size: 14px;
+				}
+
+				a {
+					margin-right: 20px;
+					text-decoration: none;
+					color: black;
+					&:hover {
+						color: #54b3d6;
+					}
+				}
+				img {
+					width: 10px;
+
+					@include mobile {
+						width: 8px;
+					}
 				}
 			}
 		}
-		img {
-			width: 5px;
-			height: 10px;
+
+		.icons {
+			padding: 20px 0;
+			width: 50%;
+			display: flex;
+			justify-content: space-between;
+
+			@include mobile {
+				margin: 20px 0;
+				width: 100%;
+			}
+
+			.icon {
+				width: 35px;
+				box-shadow: 0 6px 13px -7px rgb(73 71 71 / 50%);
+			}
 		}
 	}
 }

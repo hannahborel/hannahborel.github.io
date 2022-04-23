@@ -2,17 +2,21 @@ import "./projectFooter.scss";
 
 export default function ProjectFooter() {
 	const scrollTopHandler = () => {
+		console.log("cilick");
+		console.log(window);
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
 		});
 	};
+
+	// window.addEventListener("scroll");
+
 	return (
 		<footer>
-			<div className="scrollUp" onClick={scrollTopHandler}>
-				<img src="./assets/img/scrollUp.png" alt="" />
+			<div className="scrollUp">
+				<img src="./assets/img/scrollUp.png" alt="" onClick={scrollTopHandler} />
 			</div>
-			<p>back to top</p>
 		</footer>
 	);
 }

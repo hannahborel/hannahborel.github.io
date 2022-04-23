@@ -14,14 +14,6 @@ export default function projectHeader(props) {
 							</h2>
 							<div className="text-content">{d.year}</div>
 						</div>
-						<div className="item" id="tools">
-							<h2 className="title"> Tools</h2>
-							<div className="icons">
-								{d.icons.map((icon) => (
-									<img src={icon} alt="" />
-								))}
-							</div>
-						</div>
 					</div>
 					<div className="row-second">
 						<div className="item" id="deliverables">
@@ -41,19 +33,29 @@ export default function projectHeader(props) {
 						{d.title}
 						<span>{d.tagline}</span>
 					</h2>
-					<p className="text-content">{d.description}</p>
-					{d.github && (
+
+					<div className="icons">
+						{d.icons.map((icon) => (
+							<img src={icon} alt="" className="icon" />
+						))}
+					</div>
+
+					<div className="content-container">
+						<p className="text-content">{d.description}</p>
+						{d.github && (
+							<div className="siteLink">
+								<a href={d.github} target="_blank" rel="noreferrer">
+									{" "}
+									github
+								</a>
+							</div>
+						)}
 						<div className="siteLink">
-							<a href={d.github} target="_blank" rel="noreferrer">
-								{" "}
-								github
+							<a href={d.website} target="_blank" rel="noreferrer">
+								launch site
 							</a>
+							<img src="./assets/img/icons/arrow-dark-round.png" alt="" />
 						</div>
-					)}
-					<div className="siteLink">
-						<a href={d.website} target="_blank" rel="noreferrer">
-							launch site
-						</a>
 					</div>
 				</div>
 			</div>

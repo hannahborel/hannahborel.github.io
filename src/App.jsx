@@ -1,4 +1,5 @@
 import "./app.scss";
+import "./global.scss";
 import Nav from "./components/nav/Nav";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";

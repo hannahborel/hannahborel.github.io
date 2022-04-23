@@ -7,7 +7,7 @@ export default function BodyItem({ text, img, video }) {
 			{text && <p className="body-text-content">{text}</p>}
 			{img && <img src={img} alt="" />}
 			{video && (
-				<video width="1000px" autoPlay muted loop>
+				<video id="video" autoPlay muted loop>
 					<source src={video}></source>
 				</video>
 			)}

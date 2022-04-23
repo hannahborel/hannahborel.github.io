@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .project-body {
 	width: 100%;
 	font-family: "Roboto", sans-serif;
@@ -7,6 +9,10 @@
 	align-items: center;
 	gap: 15rem;
 	padding: 20px 0;
+
+	@include mobile {
+		gap: 7rem;
+	}
 }
 
 .bodyBanner {

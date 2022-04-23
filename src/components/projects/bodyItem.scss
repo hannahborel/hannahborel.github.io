@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 #video {
 	width: 928px;
 	height: 522px;
@@ -9,8 +11,16 @@
 	align-items: center;
 	gap: 20rem;
 
+	@include mobile {
+		gap: 5rem;
+	}
+
 	img {
 		width: 75%;
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 
 	.body-text-content {
@@ -18,8 +28,16 @@
 		font-size: 30px;
 		font-weight: 300;
 		line-height: 1.8em;
+
+		@include mobile {
+			font-size: 16px;
+			width: 70%;
+		}
 	}
 	#video {
 		width: 100%;
+
+		@include mobile {
+		}
 	}
 }

@@ -21,8 +21,6 @@ export default function Work({ setMenuType, setProject }) {
 		} else if (way === "left" && progressWidth > progressUnit) {
 			setProgressWidth(progressWidth - progressUnit);
 		} else setProgressWidth(progressUnit);
-		// } else if (way === "right" && progressWidth === 100) {
-		// 	setProgressWidth(progressUnit);
 	};
 
 	const handleProjects = (page, num) => {
@@ -36,33 +34,67 @@ export default function Work({ setMenuType, setProject }) {
 				{sliderData.map((d, i) => (
 					<div className="container">
 						<div className="item">
-							<div className={d.circle}></div>
+							<div className="bg-circle"></div>
+
 							<div className="left">
 								<div className="text-content">
 									<div className="title">
-										<p className="first">{d.titleFirst}</p>
-										<p className="second">{d.titleSecond}</p>
+										<p className="first" key="title-first">
+											{d.titleFirst}
+										</p>
+										<p className="second" key="title-second">
+											{d.titleSecond}
+										</p>
 									</div>
 									<div className="sub-title">
-										<p className="type">{d.type}</p>
-										<p className="year">{d.year}</p>
+										<p className="type" key="type">
+											{d.type}
+										</p>
+										<p className="year" key="year">
+											{d.year}
+										</p>
 									</div>
-									<Link
-										to="/projects"
-										className="project-link"
-										onClick={() => handleProjects("/projects", d.id)}
-									>
-										View Project
-									</Link>
+									{window.innerWidth > 768 && (
+										<Link
+											to="/projects"
+											className="project-link"
+											key="proj-state"
+											onClick={() => handleProjects("/projects", d.id)}
+										>
+											View
+										</Link>
+									)}
 								</div>
 							</div>
 							<div className="right">
-								<img src={d.img} alt="" className="project-img" />
+								{window.innerWidth <= 768 ? (
+									<Link
+										to="/projects"
+										className="project-link-sm"
+										key="proj-state"
+										onClick={() => handleProjects("/projects", d.id)}
+									>
+										<img
+											key="proj-img"
+											src={d.img}
+											alt=""
+											className="project-img"
+											id={"mobile-img-" + d.id}
+										/>
+									</Link>
+								) : (
+									<img
+										key="proj-img"
+										src={d.img}
+										alt=""
+										className="project-img"
+										id={"mobile-img-" + d.id}
+									/>
+								)}
 							</div>
 						</div>
 					</div>
 				))}
-				;
 			</div>
 			<img
 				className="arrow left"
