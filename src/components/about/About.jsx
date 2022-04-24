@@ -4,12 +4,11 @@ export default function About() {
 	return (
 		<div className="about">
 			<div className="about-item left">
-				<img src="./assets/img/aboutPortrait.jpg" alt="" />
+				<img src="" alt="" />
 			</div>
 			<div className="about-item right">
 				<div className="about-text-content">
 					<p className="large">
-						{" "}
 						I'm Hannah. I am a UI/UX designer and developer currently working in Houston, TX.
 					</p>
 					<p className="sub-text">

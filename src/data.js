@@ -1,19 +1,15 @@
 export const sliderData = [
 	{
 		id: "0",
-		key: "a",
-		circle: "bg-circle blue",
 		titleFirst: "Fourth ",
 		titleSecond: "& Nomad",
 		type: "Website ",
 		year: "2021 ",
-		link: "/projects",
 		img: "./assets/img/nomad-home.png",
 	},
 	{
 		id: "1",
 		key: "b",
-		circle: "bg-circle green",
 		titleFirst: "Nike Demo",
 		titleSecond: "",
 		type: "Website",
@@ -22,8 +18,6 @@ export const sliderData = [
 	},
 	{
 		id: "2",
-		key: "c",
-		circle: "bg-circle darkBlue",
 		titleFirst: "Trivia ",
 		titleSecond: "Night",
 		type: "Web App ",
@@ -32,8 +26,6 @@ export const sliderData = [
 	},
 	{
 		id: "3",
-		key: "d",
-		circle: "bg-circle widget",
 		titleFirst: "Weather ",
 		titleSecond: "Widget",
 		type: "Widget ",

@@ -14,8 +14,6 @@ export default function Menu({ menuOpen, setMenuType, setProject }) {
 			) : (
 				<AboutMenu setMenuType={setMenuType} />
 			)}
-			{/* {!projectMenu && <HomeMenu />}
-			{projectMenu && <ProjectMenu />} */}
 		</div>
 	);
 }

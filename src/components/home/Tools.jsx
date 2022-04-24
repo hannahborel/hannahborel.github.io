@@ -7,7 +7,7 @@ export default function Tools() {
 			<div className="wrapper">
 				<div className="title">My Tools</div>
 				<div className="iconRow first">
-					<img className="icon" src="assets/img/icons/ps.png" alt="" />
+					<img className="icon" src="./assets/img/icons/ps.png" alt="" />
 					<img className="icon" src="assets/img/icons/ai.png" alt="" />
 					<img className="icon" src="assets/img/icons/id.png" alt="" />
 					<img className="icon" src="assets/img/icons/pr.png" alt="" />
