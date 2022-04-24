@@ -3,7 +3,7 @@ import "./global.scss";
 import Nav from "./components/nav/Nav";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/about/About";
@@ -16,7 +16,7 @@ function App() {
 	const [project, setProject] = useState(0);
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<ScrollToTop />
 			<Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} setMenuType={setMenuType} />
 			<Menu
@@ -41,7 +41,7 @@ function App() {
 				<Route path="/about" element={<About />} />
 			</Routes>
 			<ProjectFooter />
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
