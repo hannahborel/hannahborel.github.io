@@ -84,6 +84,10 @@ ul {
 		position: relative;
 		width: 60%;
 
+		@include desktop {
+			width: 70%;
+		}
+
 		@include mobile {
 			width: 80%;
 		}
@@ -94,53 +98,16 @@ ul {
 			font-size: 45px;
 			line-height: 1.2em;
 			margin-top: 10px;
+			margin-bottom: 20px;
 			letter-spacing: 1.2px;
+
+			@include desktop {
+				font-size: 35px;
+			}
 
 			@include mobile {
 				font-size: 28px;
 				margin: 20px 0;
-			}
-		}
-
-		.content-container {
-			width: 80%;
-			@include mobile {
-				width: 100%;
-			}
-			.text-content {
-				margin-bottom: 3rem;
-			}
-
-			.siteLink {
-				float: right;
-				margin-top: 20px;
-				width: 200px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				@include mobile {
-					margin-top: 0;
-					float: none;
-					justify-content: flex-start;
-					font-size: 14px;
-				}
-
-				a {
-					margin-right: 20px;
-					text-decoration: none;
-					color: black;
-					&:hover {
-						color: #54b3d6;
-					}
-				}
-				img {
-					width: 10px;
-
-					@include mobile {
-						width: 8px;
-					}
-				}
 			}
 		}
 
@@ -150,6 +117,10 @@ ul {
 			display: flex;
 			justify-content: space-between;
 
+			@include desktop {
+				width: 80%;
+			}
+
 			@include mobile {
 				margin: 20px 0;
 				width: 100%;
@@ -158,6 +129,69 @@ ul {
 			.icon {
 				width: 35px;
 				box-shadow: 0 6px 13px -7px rgb(73 71 71 / 50%);
+			}
+		}
+
+		.content-container {
+			width: 80%;
+
+			@include mobile {
+				width: 100%;
+			}
+
+			.text-content {
+				margin-bottom: 3rem;
+			}
+
+			.links {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				gap: 20px;
+
+				.link-item {
+					display: flex;
+					align-self: flex-end;
+					justify-content: flex-start;
+					align-items: center;
+					padding-bottom: 10px;
+					width: 120px;
+
+					@include mobile {
+						margin-top: 0;
+						float: none;
+						justify-content: flex-start;
+						font-size: 14px;
+					}
+
+					a {
+						margin-right: 5px;
+						font-size: 14px;
+						letter-spacing: 1.3px;
+						font-weight: 500;
+						text-decoration: none;
+						color: black;
+					}
+					img {
+						width: 20px;
+						transition: 0.1s ease-in-out;
+
+						@include mobile {
+							width: 15px;
+						}
+					}
+
+					&:hover {
+						a {
+							color: #54b3d6;
+							font-weight: 400;
+						}
+
+						img {
+							transform: rotate(90deg) translateY(-5px);
+						}
+					}
+				}
 			}
 		}
 	}

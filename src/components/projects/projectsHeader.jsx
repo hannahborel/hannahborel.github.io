@@ -42,19 +42,23 @@ export default function projectHeader(props) {
 
 					<div className="content-container">
 						<p className="text-content">{d.description}</p>
-						{d.github && (
-							<div className="siteLink">
-								<a href={d.github} target="_blank" rel="noreferrer">
-									{" "}
-									github
+
+						<div className="links">
+							<div className="link-item">
+								<a href={d.website} target="_blank" rel="noreferrer">
+									launch site
 								</a>
+								<img src="./assets/img/scrollUp.png" alt="" />
 							</div>
-						)}
-						<div className="siteLink">
-							<a href={d.website} target="_blank" rel="noreferrer">
-								launch site
-							</a>
-							<img src="./assets/img/icons/arrow-dark-round.png" alt="" />
+							{d.github && (
+								<div className="link-item">
+									<a href={d.github} target="_blank" rel="noreferrer">
+										{" "}
+										view github
+									</a>
+									<img src="./assets/img/scrollUp.png" alt="" />
+								</div>
+							)}
 						</div>
 					</div>
 				</div>

@@ -88,8 +88,8 @@ export const projectDetails = [
 	},
 	{
 		id: "2",
-		title: "Nike Demo",
-		tagline: " Just Do it",
+		title: "nike shop demo",
+		tagline: "",
 		year: "2022",
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "Photo Libraries", "Website Copy"],
 		description:
@@ -115,8 +115,8 @@ export const projectDetails = [
 
 	{
 		id: "3",
-		title: "Trivia Night ",
-		tagline: "We love the 90s",
+		title: "Trivia Night: ",
+		tagline: "Millenial Addition",
 		year: "2019",
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "jQuery"],
 		description:
@@ -147,7 +147,7 @@ export const projectDetails = [
 	},
 	{
 		id: "4",
-		title: "Weather Widget ",
+		title: "",
 		tagline: "Something cute just for fun",
 		year: "2019",
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "ajax"],

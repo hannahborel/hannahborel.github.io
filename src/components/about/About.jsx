@@ -4,7 +4,7 @@ export default function About() {
 	return (
 		<div className="about">
 			<div className="about-item left">
-				<img src="" alt="" />
+				<img src="./assets/img/self-portrait.png" alt="" />
 			</div>
 			<div className="about-item right">
 				<div className="about-text-content">

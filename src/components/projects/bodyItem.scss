@@ -1,25 +1,22 @@
 @import "../../global.scss";
 
-#video {
-	width: 928px;
-	height: 522px;
-}
 .body-item {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 20rem;
+	gap: 10rem;
+	margin-top: 5rem;
 
-	@include mobile {
-		gap: 5rem;
-	}
+	// @include mobile {
+	// 	// gap: 10rem;
+	// }
 
 	img {
 		width: 75%;
 
 		@include mobile {
-			width: 100%;
+			width: 120%;
 		}
 	}
 
@@ -30,14 +27,18 @@
 		line-height: 1.8em;
 
 		@include mobile {
-			font-size: 16px;
-			width: 70%;
+			font-size: 14px;
+			width: 60%;
 		}
 	}
 	#video {
-		width: 100%;
+		width: 70%;
+		border-radius: 50px;
 
 		@include mobile {
+			border-top-left-radius: 100px;
+			border-top-right-radius: 100px;
+			width: 120%;
 		}
 	}
 }

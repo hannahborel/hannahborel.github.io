@@ -8,6 +8,7 @@ import { useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/about/About";
 import Menu from "./components/nav/Menu";
+import ProjectFooter from "./components/projects/ProjectFooter";
 
 function App() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -39,6 +40,7 @@ function App() {
 				<Route path="/projects" element={<Projects project={project} />} />
 				<Route path="/about" element={<About />} />
 			</Routes>
+			<ProjectFooter />
 		</BrowserRouter>
 	);
 }

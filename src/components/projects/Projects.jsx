@@ -3,7 +3,7 @@ import ProjectsHeader from "./projectsHeader";
 import ProjectsBody from "./ProjectsBody";
 import "./projects.scss";
 import { projectDetails } from "../../data";
-import ProjectFooter from "./ProjectFooter";
+// import ProjectFooter from "./ProjectFooter";
 
 export default function Projects({ project }) {
 	let data = projectDetails[project];
@@ -12,7 +12,7 @@ export default function Projects({ project }) {
 		<div className="project" id="project">
 			<ProjectsHeader headerData={data} />
 			<ProjectsBody bodyData={data} />
-			<ProjectFooter />
+			{/* <ProjectFooter /> */}
 		</div>
 	);
 }
