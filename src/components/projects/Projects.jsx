@@ -2,17 +2,18 @@ import React from "react";
 import ProjectsHeader from "./projectsHeader";
 import ProjectsBody from "./ProjectsBody";
 import "./projects.scss";
-import { projectDetails } from "../../data";
-// import ProjectFooter from "./ProjectFooter";
+import ScrollToTop from "../../components/ScrollToTop";
 
-export default function Projects({ project }) {
-	let data = projectDetails[project];
+import { projectDetails } from "../../data";
+
+export default function Projects({ featured }) {
+	const data = projectDetails[featured];
 
 	return (
 		<div className="project" id="project">
+			<ScrollToTop />
 			<ProjectsHeader headerData={data} />
 			<ProjectsBody bodyData={data} />
-			{/* <ProjectFooter /> */}
 		</div>
 	);
 }

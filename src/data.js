@@ -1,6 +1,7 @@
 export const sliderData = [
 	{
 		id: "0",
+		key: "a",
 		titleFirst: "Fourth ",
 		titleSecond: "& Nomad",
 		type: "Website ",
@@ -18,6 +19,7 @@ export const sliderData = [
 	},
 	{
 		id: "2",
+		key: "c",
 		titleFirst: "Trivia ",
 		titleSecond: "Night",
 		type: "Web App ",
@@ -26,6 +28,7 @@ export const sliderData = [
 	},
 	{
 		id: "3",
+		key: "d",
 		titleFirst: "Weather ",
 		titleSecond: "Widget",
 		type: "Widget ",
@@ -36,7 +39,7 @@ export const sliderData = [
 
 export const projectDetails = [
 	{
-		id: "1",
+		id: "0",
 		title: "From Store to Screen ",
 		tagline: "",
 		year: "2021",
@@ -87,7 +90,7 @@ export const projectDetails = [
 		],
 	},
 	{
-		id: "2",
+		id: "1",
 		title: "nike shop demo",
 		tagline: "",
 		year: "2022",
@@ -114,9 +117,9 @@ export const projectDetails = [
 	},
 
 	{
-		id: "3",
-		title: "Trivia Night: ",
-		tagline: "Millenial Addition",
+		id: "2",
+		title: "We Love ",
+		tagline: "the 90s",
 		year: "2019",
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "jQuery"],
 		description:
@@ -146,9 +149,9 @@ export const projectDetails = [
 		],
 	},
 	{
-		id: "4",
+		id: "3",
 		title: "",
-		tagline: "Something cute just for fun",
+		tagline: "something just for fun",
 		year: "2019",
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "ajax"],
 		description:

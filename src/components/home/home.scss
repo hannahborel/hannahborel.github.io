@@ -1,4 +1,5 @@
 @import "../../global.scss";
+
 .sections {
 	width: 100%;
 	font-family: "Roboto", san-serif;
@@ -6,10 +7,38 @@
 	position: relative;
 	overflow-x: hidden;
 
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+	@keyframes fadeInAnimation {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
 	> * {
 		width: 100vw;
 		height: calc(100vh - 80px);
 		scroll-snap-align: start;
+	}
+
+	.section-title {
+		position: absolute;
+		top: 100px;
+		left: 150px;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 1.3px;
+		margin: 0 0 20px 0;
+
+		@include mobile {
+			visibility: hidden;
+		}
 	}
 
 	.contact {

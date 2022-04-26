@@ -1,20 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./aboutMenu.scss";
 
-export default function AboutMenu(setMenuType) {
+export default function AboutMenu({ setPage }) {
 	return (
 		<div>
 			<ul>
 				<li>
-					<Link to="/" onClick={() => setMenuType("/")}>
-						Home
-					</Link>
+					<p onClick={() => setPage("home")}> Home</p>
 				</li>
 				<li>
-					<Link to="/projects" state={0} onClick={() => setMenuType("/about")}>
-						Projects
-					</Link>
+					<p onClick={() => setPage("project")}>Projects</p>
 				</li>
 			</ul>
 		</div>

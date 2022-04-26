@@ -7,8 +7,12 @@
 	color: black;
 	position: fixed;
 	top: 0;
-	z-index: 3;
+	z-index: 4;
 	transition: all 1s ease;
+
+	@include mobile {
+		height: 120px;
+	}
 
 	.wrapper {
 		padding: 20px 50px;
@@ -24,6 +28,7 @@
 			display: flex;
 			align-items: center;
 			position: relative;
+			cursor: pointer;
 
 			.logo {
 				font-size: 16px;
@@ -31,7 +36,6 @@
 				letter-spacing: 5px;
 				text-decoration: none;
 				text-transform: uppercase;
-				color: inherit;
 				margin: 0 auto;
 				padding-bottom: 5px;
 
@@ -47,6 +51,7 @@
 				font-size: 24px;
 				letter-spacing: 2px;
 				display: none;
+				cursor: pointer;
 
 				@include mobile {
 					display: block;
@@ -62,6 +67,7 @@
 				background-color: #54b3d69a;
 				transform-origin: bottom right;
 				transition: transform 0.25s ease-out;
+				cursor: pointer;
 			}
 
 			&:hover div {

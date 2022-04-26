@@ -5,11 +5,11 @@ import Work from "./Work";
 import Tools from "./Tools";
 import Contact from "./Contact";
 
-export default function Home({ menuType, setMenuType, setProject }) {
+export default function Home({ setFeatured, setPage }) {
 	return (
 		<div className="sections">
 			<Banner />
-			<Work menuType={menuType} setMenuType={setMenuType} setProject={setProject} />
+			<Work setFeatured={setFeatured} setPage={setPage} />
 			<Tools />
 			<Contact />
 		</div>

@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export default function HomeMenu({ setMenuType }) {
+export default function HomeMenu({ setPage }) {
 	return (
 		<div>
 			<ul>
@@ -12,13 +11,10 @@ export default function HomeMenu({ setMenuType }) {
 					<a href="#tools">Tools </a>
 				</li>
 				<li>
-					<Link to="/about" id="#about" onClick={() => setMenuType("/about")}>
-						About
-					</Link>
+					<p onClick={() => setPage("about")}>About</p>
 				</li>
 				<li>
 					<a href="#contact" className="menuItem">
-						{" "}
 						Contact
 					</a>
 				</li>

@@ -1,14 +1,13 @@
 import "./nav.scss";
-import { Link } from "react-router-dom";
 
-export default function Nav({ menuOpen, setMenuOpen, setMenuType }) {
+export default function Nav({ menuOpen, setMenuOpen, setPage }) {
 	return (
 		<div className={"nav " + (menuOpen && "active")}>
 			<div className="wrapper">
 				<div className="left">
-					<Link to="/" className="logo" onClick={() => setMenuType("/")}>
+					<p className="logo" onClick={() => setPage("home")}>
 						<span className="logo-lg">Hannah Borel</span> <span className="logo-sm">HB</span>
-					</Link>
+					</p>
 					<div></div>
 				</div>
 				<div className="right">
