@@ -53,7 +53,7 @@ export const projectDetails = [
 			"App Integration",
 		],
 		description:
-			"I was approached to redesign Forth & Nomad’s e-commerce site to help increase online sales and create and create a visual design that was more in line with their brand. Working closely with the F&N team I developed several concepts that covered the e-commerce platform, branded content, and tone of voice.",
+			"I was approached to redesign Forth & Nomad’s e-commerce site to help increase online sales and create a visual design that was more in line with their brand. Working closely with the F&N team I developed several concepts that covered the e-commerce platform, branded content, and tone of voice.",
 		website: "https://forthandnomad.com",
 		github: "",
 
@@ -68,7 +68,7 @@ export const projectDetails = [
 
 		body: [
 			{
-				p: "Palates were inspired by their brick and mortar location. I chose earth tones but kept it bright.",
+				p: "Pallets were inspired by their brick and mortar location. I chose earth tones but kept it bright.",
 				img: "/assets/img/projectImg/fn/fn-palette.png",
 			},
 			{
