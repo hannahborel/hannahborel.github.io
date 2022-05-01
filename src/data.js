@@ -80,11 +80,11 @@ export const projectDetails = [
 				img: "./assets/img/projectImg/fn/fn-layout02.png",
 			},
 			{
-				p: "Product case studies assisted in creating a new product flow and display. We harmonized best sellers with in store products that lacked visibility.",
+				p: "Introducing cometitor and product case studies we created a new merchandise flow and innovative display. We harmonized best sellers with new items to increase visibility",
 				img: "./assets/img/projectImg/fn/fn-layout03.png",
 			},
 			{
-				p: "Analytics were taken from 6 months after redesign launch. Here are some of my favorites.",
+				p: "Analytics were taken 6 months after redesign launch. Here are some of my favorites.",
 				img: "./assets/img/projectImg/fn/fn-stats.png",
 			},
 		],
@@ -155,7 +155,7 @@ export const projectDetails = [
 		year: "2019",
 		deliverables: [" UI/UX", "Custom Graphics", "JavaScript", "ajax"],
 		description:
-			"I was inspired by the cutest little weather widget I saw online and wanted to create my own. All graphics including background vectors and westher icons were created from scratch with Adobe Illustrator. Data is generated dynamically from the weather.com API and is pulled for the city of Houston, TX.",
+			"I was inspired by the cutest little weather widget I saw online and wanted to create my own. All graphics including background vectors and weather icons were created from scratch with Adobe Illustrator. Data is generated dynamically from the weather.com API and is pulled for the city of Houston, TX.",
 		website: "https://hannahborel.github.io/weather-widget/",
 		github: "https://github.com/hannahborel/weather-widget",
 		icons: [

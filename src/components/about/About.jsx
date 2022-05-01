@@ -32,7 +32,7 @@ export default function About() {
 					</p>
 					<p className="sub-text">
 						These days, my time is spent researching, designing, prototyping, and coding. Out of the
-						office you’ll find me powerlifting, learning spanish and the ukelele and diving into
+						office you’ll find me powerlifting, learning spanish and the ukelele, and diving into
 						books about neuroplasticity.
 					</p>
 				</div>
